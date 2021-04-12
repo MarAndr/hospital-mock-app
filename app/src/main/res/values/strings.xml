@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Hospital</string>
+    <string name="nameLabel">Name:</string>
+    <string name="lastNameLabel">Last name:</string>
+    <string name="ageLabel">Age:</string>
+    <string name="specializationLabel">Specialization:</string>
+    <string name="workDaysLabel">Work days:</string>
+    <string name="workHoursLabel">Work hours:</string>
+    <string name="idLabel">ID:</string>
+    <string name="officeLabel">Office number:</string>
+    <string name="diagnosisLabel">Diagnosis:</string>
+    <string name="hospital_title_label">Title:</string>
+    <string name="hospital_address_label">Address:</string>
+    <string name="hospital_workday_label">Work Days:</string>
+    <string name="patient_name_label">Patients name:</string>
+    <string name="doctor_name_label">Doctors name:</string>
+    <string name="recording_time_label">Recording time:</string>
+    <string name="medfac_med_label">Hospital title:</string>
+    <string name="medfac_doctor_label">Doctor lastname:</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>
+

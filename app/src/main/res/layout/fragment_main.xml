@@ -1,0 +1,672 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:checkable="true"
+            android:clickable="true"
+            android:focusable="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/hospital" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Medical Facilities"
+                        android:textAppearance="?attr/textAppearanceHeadline6" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="You can see all medical facilities here"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="?android:attr/textColorSecondary" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:text="Our hospitals are very clean"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="?android:attr/textColorSecondary" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btn_mainFragment_getAllMedFac"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginRight="8dp"
+                        android:text="get list" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btn_mainFragment_deleteAllMedFac"
+                        style="@style/Widget.MaterialComponents.Button.TextButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="clear all"
+                        android:textColor="@color/red_700" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btn_mainFragment_addRandomMedFac"
+                        style="@style/Widget.MaterialComponents.Button.TextButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="+ 10 random items"
+                        android:textColor="@color/purple_700" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardView_marinFragment_doctor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:checkable="true"
+            android:clickable="true"
+            android:focusable="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/doctor_card_image" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Doctors"
+                        android:textAppearance="?attr/textAppearanceHeadline6" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="You can see all doctors"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="?android:attr/textColorSecondary" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:text="Our staff are the best"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="?android:attr/textColorSecondary" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btn_mainFragment_getAllDoctors"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginRight="8dp"
+                        android:text="get list" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btn_testDatabase_deleteAllDoctors"
+                        style="@style/Widget.MaterialComponents.Button.TextButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="clear all"
+                        android:textColor="@color/red_700" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btn_mainFragment_addRandomDoctors"
+                        style="@style/Widget.MaterialComponents.Button.TextButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="+ 10 random doctors"
+                        android:textColor="@color/purple_700" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardView_marinFragment_medFacDoctor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:checkable="true"
+            android:clickable="true"
+            android:focusable="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/medfacdoctor" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Link a doctor to the clinic"
+                        android:textAppearance="?attr/textAppearanceHeadline6" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="You can add a doctor to a concrete medical facilities here"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="?android:attr/textColorSecondary" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btn_mainFragment_getAllMedFacDoctor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginRight="8dp"
+                        android:text="get list" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btn_mainFragment_deleteAllMedFacDoctor"
+                        style="@style/Widget.MaterialComponents.Button.TextButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="clear all"
+                        android:textColor="@color/red_700" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btn_mainFragment_addRandomMedFacDoctor"
+                        style="@style/Widget.MaterialComponents.Button.TextButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="+ 10 random items"
+                        android:textColor="@color/purple_700" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:checkable="true"
+            android:clickable="true"
+            android:focusable="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/patients_card_image" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Patients"
+                        android:textAppearance="?attr/textAppearanceHeadline6" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="You can see all patients here"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="?android:attr/textColorSecondary" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:text="Our clients are very ill"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="?android:attr/textColorSecondary" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btn_mainFragment_getAllPatients"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginRight="8dp"
+                        android:text="get list" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btn_hospitalDatabaseFragment_deleteAllPatients"
+                        style="@style/Widget.MaterialComponents.Button.TextButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="clear all"
+                        android:textColor="@color/red_700" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btn_mainFragment_addRandomPatients"
+                        style="@style/Widget.MaterialComponents.Button.TextButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="+ 10 random patients"
+                        android:textColor="@color/purple_700" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:checkable="true"
+            android:clickable="true"
+            android:focusable="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/recordings_card_3" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Recordings"
+                        android:textAppearance="?attr/textAppearanceHeadline6" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="You can see all recordings here"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="?android:attr/textColorSecondary" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:text="Our recordings are very neat"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="?android:attr/textColorSecondary" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btn_mainFragment_getAllRecordings"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginRight="8dp"
+                        android:text="get list" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btn_mainFragment_deleteAllRecordings"
+                        style="@style/Widget.MaterialComponents.Button.TextButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="clear all"
+                        android:textColor="@color/red_700" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
+
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+
+    <!--<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--    android:layout_width="match_parent"-->
+    <!--    android:layout_height="wrap_content">-->
+
+    <!--    <LinearLayout xmlns:tools="http://schemas.android.com/tools"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent"-->
+    <!--        android:orientation="vertical"-->
+    <!--        android:padding="8dp"-->
+    <!--        >-->
+
+    <!--        <LinearLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:orientation="horizontal">-->
+
+    <!--            <com.google.android.material.card.MaterialCardView-->
+    <!--                android:layout_width="175dp"-->
+    <!--                android:layout_height="340dp"-->
+    <!--                android:layout_margin="8dp"-->
+    <!--                android:checkable="true"-->
+    <!--                android:clickable="true"-->
+    <!--                android:focusable="true">-->
+
+    <!--                <LinearLayout-->
+    <!--                    android:layout_width="match_parent"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:orientation="vertical">-->
+
+    <!--                    <ImageView-->
+    <!--                        android:layout_width="match_parent"-->
+    <!--                        android:layout_height="150dp"-->
+    <!--                        android:layout_gravity="center_horizontal"-->
+    <!--                        android:scaleType="centerCrop"-->
+    <!--                        android:src="@drawable/doctor_card_image" />-->
+
+    <!--                    <LinearLayout-->
+    <!--                        android:layout_width="match_parent"-->
+    <!--                        android:layout_height="wrap_content"-->
+    <!--                        android:orientation="vertical"-->
+    <!--                        android:padding="16dp">-->
+
+    <!--                        <TextView-->
+    <!--                            android:layout_width="wrap_content"-->
+    <!--                            android:layout_height="wrap_content"-->
+    <!--                            android:text="Doctors"-->
+    <!--                            android:textAppearance="?attr/textAppearanceHeadline6" />-->
+
+    <!--                        <TextView-->
+    <!--                            android:layout_width="wrap_content"-->
+    <!--                            android:layout_height="wrap_content"-->
+    <!--                            android:layout_marginTop="8dp"-->
+    <!--                            android:text="You can see all doctors"-->
+    <!--                            android:textAppearance="?attr/textAppearanceBody2"-->
+    <!--                            android:textColor="?android:attr/textColorSecondary" />-->
+
+    <!--                        <TextView-->
+    <!--                            android:layout_width="wrap_content"-->
+    <!--                            android:layout_height="wrap_content"-->
+    <!--                            android:layout_marginTop="16dp"-->
+    <!--                            android:text="Our staff are the best"-->
+    <!--                            android:textAppearance="?attr/textAppearanceBody2"-->
+    <!--                            android:textColor="?android:attr/textColorSecondary" />-->
+
+    <!--                    </LinearLayout>-->
+
+    <!--                    <LinearLayout-->
+    <!--                        android:layout_width="wrap_content"-->
+    <!--                        android:layout_height="wrap_content"-->
+    <!--                        android:orientation="horizontal">-->
+
+    <!--                        <com.google.android.material.button.MaterialButton-->
+    <!--                            android:id="@+id/btn_testDatabase_getAllDoctors"-->
+    <!--                            android:layout_width="wrap_content"-->
+    <!--                            android:layout_height="wrap_content"-->
+    <!--                            android:text="get list"-->
+    <!--                            android:textSize="12sp" />-->
+
+    <!--                        <com.google.android.material.button.MaterialButton-->
+    <!--                            android:id="@+id/btn_testDatabase_deleteAllDoctors"-->
+    <!--                            style="@style/Widget.MaterialComponents.Button.TextButton"-->
+    <!--                            android:layout_width="wrap_content"-->
+    <!--                            android:layout_height="wrap_content"-->
+    <!--                            android:text="clear all"-->
+    <!--                            android:textColor="@color/red_700"-->
+    <!--                            android:textSize="12sp" />-->
+    <!--                    </LinearLayout>-->
+
+    <!--                </LinearLayout>-->
+
+    <!--            </com.google.android.material.card.MaterialCardView>-->
+
+    <!--            <com.google.android.material.card.MaterialCardView-->
+    <!--                android:layout_width="175dp"-->
+    <!--                android:layout_height="340dp"-->
+    <!--                android:layout_margin="8dp"-->
+    <!--                android:checkable="true"-->
+    <!--                android:clickable="true"-->
+    <!--                android:focusable="true">-->
+
+    <!--                <LinearLayout-->
+    <!--                    android:layout_width="match_parent"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:orientation="vertical">-->
+
+    <!--                    <ImageView-->
+    <!--                        android:layout_width="match_parent"-->
+    <!--                        android:layout_height="150dp"-->
+    <!--                        android:layout_gravity="center_horizontal"-->
+    <!--                        android:scaleType="centerCrop"-->
+    <!--                        android:src="@drawable/patients_card_image" />-->
+
+    <!--                    <LinearLayout-->
+    <!--                        android:layout_width="match_parent"-->
+    <!--                        android:layout_height="wrap_content"-->
+    <!--                        android:orientation="vertical"-->
+    <!--                        android:padding="16dp">-->
+
+    <!--                        <TextView-->
+    <!--                            android:layout_width="wrap_content"-->
+    <!--                            android:layout_height="wrap_content"-->
+    <!--                            android:text="Patients"-->
+    <!--                            android:textAppearance="?attr/textAppearanceHeadline6" />-->
+
+    <!--                        <TextView-->
+    <!--                            android:layout_width="wrap_content"-->
+    <!--                            android:layout_height="wrap_content"-->
+    <!--                            android:layout_marginTop="8dp"-->
+    <!--                            android:text="You can see all patients"-->
+    <!--                            android:textAppearance="?attr/textAppearanceBody2"-->
+    <!--                            android:textColor="?android:attr/textColorSecondary" />-->
+
+    <!--                        <TextView-->
+    <!--                            android:layout_width="wrap_content"-->
+    <!--                            android:layout_height="wrap_content"-->
+    <!--                            android:layout_marginTop="16dp"-->
+    <!--                            android:text="Our clients are very ill"-->
+    <!--                            android:textAppearance="?attr/textAppearanceBody2"-->
+    <!--                            android:textColor="?android:attr/textColorSecondary" />-->
+
+    <!--                    </LinearLayout>-->
+
+    <!--                    <LinearLayout-->
+    <!--                        android:layout_width="wrap_content"-->
+    <!--                        android:layout_height="wrap_content"-->
+
+    <!--                        android:orientation="horizontal">-->
+
+    <!--                        <com.google.android.material.button.MaterialButton-->
+    <!--                            android:id="@+id/btn_testDatabase_getAllPatients"-->
+    <!--                            android:layout_width="wrap_content"-->
+    <!--                            android:layout_height="wrap_content"-->
+    <!--                            android:text="get list"-->
+    <!--                            android:textSize="12sp" />-->
+
+    <!--                        <com.google.android.material.button.MaterialButton-->
+    <!--                            android:id="@+id/btn_testDatabase_deleteAllPatients"-->
+    <!--                            style="@style/Widget.MaterialComponents.Button.TextButton"-->
+    <!--                            android:layout_width="wrap_content"-->
+    <!--                            android:layout_height="wrap_content"-->
+    <!--                            android:text="clear all"-->
+    <!--                            android:textColor="@color/red_700"-->
+    <!--                            android:textSize="12sp" />-->
+    <!--                    </LinearLayout>-->
+
+    <!--                </LinearLayout>-->
+
+    <!--            </com.google.android.material.card.MaterialCardView>-->
+    <!--        </LinearLayout>-->
+
+    <!--        <Button-->
+    <!--            android:id="@+id/btn_testDatabase_getPatientsWithRecordings"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:text="get patients with recordings" />-->
+
+    <!--        <Button-->
+    <!--            android:id="@+id/btn_testDatabase_getMedFac"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:text="get all medical facilities" />-->
+
+    <!--        <Button-->
+    <!--            android:id="@+id/btn_testDatabase_insertOffices"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:text="insert offices" />-->
+
+    <!--        <Button-->
+    <!--            android:id="@+id/btn_testDatabase_getAllOffices"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:text="get all offices" />-->
+
+    <!--        <Button-->
+    <!--            android:id="@+id/btn_testDatabase_insertRecordings"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:text="insert recordings" />-->
+
+    <!--        <Button-->
+    <!--            android:id="@+id/btn_testDatabase_getAllRecordings"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:text="get all recordings" />-->
+
+    <!--        <Button-->
+    <!--            android:id="@+id/btn_testDatabase_addTenRandomPatients"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:text="add ten random patients" />-->
+
+    <!--        <Button-->
+    <!--            android:id="@+id/btn_testDatabase_addRandomDoctors"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:text="add ten random doctors" />-->
+
+    <!--        <Button-->
+    <!--            android:id="@+id/btn_testDatabase_addALotOfOffices"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:text="add ten random offices" />-->
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/tv_testDataBase_doctors"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_gravity="center_horizontal"-->
+    <!--            android:layout_marginTop="40dp"-->
+    <!--            android:textSize="20sp"-->
+    <!--            tools:text="@tools:sample/first_names" />-->
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/tv_testDataBase_patients"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_gravity="center_horizontal"-->
+    <!--            android:layout_marginTop="40dp"-->
+    <!--            android:textSize="20sp"-->
+    <!--            tools:text="@tools:sample/first_names" />-->
+
+
+    <!--    </LinearLayout>-->
+    <!--</androidx.core.widget.NestedScrollView>-->

@@ -1,0 +1,74 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.RoomDao" parent="Theme.MaterialComponents.Light">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/blue_200</item>
+        <item name="colorPrimaryVariant">@color/blue_500</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/purple_500</item>
+        <item name="colorSecondaryVariant">@color/grey_700</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+        <item name="textInputStyle">@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox</item>
+    </style>
+
+    <style name="CustomTextInputStyle" parent="Widget.Design.TextInputLayout">
+        <item name="counterEnabled">true</item>
+        <item name="counterMaxLength">20</item>
+        <item name="endIconMode">clear_text</item>
+        <item name="android:layout_margin">8dp</item>
+        <item name="android:layout_marginTop">24dp</item>
+        <item name="android:layout_marginLeft">8dp</item>
+    </style>
+    
+
+
+    <style name="LabelItemStyle">
+        <item name="android:layout_marginLeft">8dp</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="TextItemStyle" parent="LabelItemStyle">
+        <item name="android:textColor">?attr/colorOnPrimary</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="AlertDialogCustom" parent="Theme.MaterialComponents.Light.Dialog.Alert">
+        <item name="buttonBarPositiveButtonStyle">@style/Alert.Button.Positive</item>
+        <item name="buttonBarNegativeButtonStyle">@style/Alert.Button.Negative</item>
+    </style>
+
+    <style name="Alert.Button.Positive" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="android:textColor">@color/black</item>
+        <item name="backgroundTint">@color/blue_200</item>
+    </style>
+
+    <style name="Alert.Button.Negative" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="android:textColor">@color/red_700</item>
+    </style>
+
+    <style name="CustomDeleteItemButton">
+        <item name="android:textSize">12sp</item>
+        <item name="android:layout_marginLeft">8dp</item>
+        <item name="android:layout_marginStart">8dp</item>
+        <item name="backgroundTint">@color/red_500</item>
+        <item name="android:text">delete</item>
+        <item name="android:textColor">?attr/colorOnPrimary</item>
+    </style>
+
+    <style name="TextInputCustomStyle" parent="ThemeOverlay.MaterialComponents.TextInputEditText">
+        <item name="colorPrimary">@color/black</item>
+    </style>
+
+
+
+
+
+
+</resources>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+
+
+    <LinearLayout
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/linearLayout_patientName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/patientsName_itemRecording_label"
+            style="@style/LabelItemStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/patient_name_label" />
+
+        <TextView
+            android:id="@+id/patientsName_itemRecording"
+            style="@style/TextItemStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="@tools:sample/full_names" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout_doctorsName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="@id/linearLayout_patientName"
+        app:layout_constraintTop_toBottomOf="@id/linearLayout_patientName">
+
+        <TextView
+            android:id="@+id/doctorsName_itemRecording_label"
+            style="@style/LabelItemStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/doctor_name_label" />
+
+        <TextView
+            android:id="@+id/doctorsName_itemRecording"
+            style="@style/TextItemStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Klepikov" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout_recordingTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="@id/linearLayout_doctorsName"
+        app:layout_constraintTop_toBottomOf="@id/linearLayout_doctorsName">
+
+        <TextView
+            android:id="@+id/recordingTime_itemRecording_label"
+            style="@style/LabelItemStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/recording_time_label" />
+
+        <TextView
+            android:id="@+id/recordingTime_itemRecording"
+            style="@style/TextItemStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="12:55" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linearLayout_recordingTime">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_itemRecording_update"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:text="update"
+            android:textColor="@color/purple_700"
+            android:textSize="12sp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_itemRecording_delete"
+            style="@style/CustomDeleteItemButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

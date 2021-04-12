@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/iv_medFac_photo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@tools:sample/avatars" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout_medFac_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toEndOf="@id/iv_medFac_photo"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/title_itemMedFac_label"
+            style="@style/LabelItemStyle"
+            android:text="@string/hospital_title_label" />
+
+        <TextView
+            android:id="@+id/title_itemMedFac"
+            style="@style/TextItemStyle"
+            tools:text="Poliklinika 22" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout_medFac_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout_medFac_title"
+        app:layout_constraintTop_toBottomOf="@id/linearLayout_medFac_title">
+
+        <TextView
+            android:id="@+id/address_itemMedFac_label"
+            style="@style/LabelItemStyle"
+            android:text="@string/hospital_address_label" />
+
+        <TextView
+            android:id="@+id/address_itemMedFac"
+            style="@style/TextItemStyle"
+            tools:text="Sovetskay street, 22" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout_medFac_workdays"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout_medFac_address"
+        app:layout_constraintTop_toBottomOf="@id/linearLayout_medFac_address">
+
+        <TextView
+            android:id="@+id/workdays_itemMedFac_label"
+            style="@style/LabelItemStyle"
+            android:text="@string/hospital_workday_label" />
+
+        <TextView
+            style="@style/TextItemStyle"
+            android:id="@+id/workDays_itemMedFac"
+            tools:text="MON, TUE, WED" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout_medFac_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout_medFac_workdays"
+        app:layout_constraintTop_toBottomOf="@id/linearLayout_medFac_workdays">
+
+        <TextView
+            android:id="@+id/id_itemMedFac_label"
+            style="@style/LabelItemStyle"
+            android:text="@string/idLabel" />
+
+        <TextView
+            style="@style/TextItemStyle"
+            android:id="@+id/id_itemMedFac"
+            tools:text="1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linearLayout_medFac_id">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_itemMedFac_update"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:text="update"
+            android:textColor="@color/purple_700"
+            android:textSize="12sp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_itemMedFac_delete"
+            style="@style/CustomDeleteItemButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

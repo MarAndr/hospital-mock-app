@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+
+
+    <ImageView
+        android:id="@+id/avatar_itemPatient"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@tools:sample/avatars" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout_patient_firstName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toEndOf="@id/avatar_itemPatient"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/firstName_itemPatient_label"
+            style="@style/LabelItemStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nameLabel" />
+
+        <TextView
+            android:id="@+id/firstName_itemPatient"
+            style="@style/TextItemStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="@tools:sample/full_names" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout_patient_lastName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="@id/linearLayout_patient_firstName"
+        app:layout_constraintTop_toBottomOf="@id/linearLayout_patient_firstName">
+
+        <TextView
+            android:id="@+id/lastName_itemPatient_label"
+            style="@style/LabelItemStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lastNameLabel" />
+
+        <TextView
+            android:id="@+id/lastName_itemPatient"
+            style="@style/TextItemStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Klepikov" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout_patient_age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="@id/linearLayout_patient_lastName"
+        app:layout_constraintTop_toBottomOf="@id/linearLayout_patient_lastName">
+
+        <TextView
+            android:id="@+id/age_itemPatient_label"
+            style="@style/LabelItemStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ageLabel" />
+
+        <TextView
+            android:id="@+id/age_itemPatient"
+            style="@style/TextItemStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="10 years old" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout_diagnosis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="@id/linearLayout_patient_age"
+        app:layout_constraintTop_toBottomOf="@id/linearLayout_patient_age">
+
+        <TextView
+            android:id="@+id/diagnosis_itemPatient_label"
+            style="@style/LabelItemStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/diagnosisLabel" />
+
+        <TextView
+            android:id="@+id/diagnosis_itemPatient"
+            style="@style/TextItemStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="optometrist" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout_patient_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="@id/linearLayout_diagnosis"
+        app:layout_constraintTop_toBottomOf="@id/linearLayout_diagnosis">
+
+        <TextView
+            android:id="@+id/id_itemPatient_label"
+            style="@style/LabelItemStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/idLabel" />
+
+        <TextView
+            android:id="@+id/id_itemPatient"
+            style="@style/TextItemStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="10" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linearLayout_patient_id">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_itemPatient_update"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:text="update"
+            android:textColor="@color/purple_700"
+            android:textSize="12sp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_itemPatient_delete"
+            style="@style/CustomDeleteItemButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

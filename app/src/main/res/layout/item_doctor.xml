@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:layout_marginTop="8dp"
+        android:id="@+id/avatar_itemDoctor"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@tools:sample/avatars" />
+
+    <LinearLayout
+        android:layout_marginTop="8dp"
+        android:id="@+id/linearLayout_firstName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toEndOf="@id/avatar_itemDoctor"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/firstName_itemDoctor_label"
+            style="@style/LabelItemStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nameLabel" />
+
+        <TextView
+            android:id="@+id/firstName_itemDoctor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/TextItemStyle"
+            tools:text="@tools:sample/full_names" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout_lastName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="@id/linearLayout_firstName"
+        app:layout_constraintTop_toBottomOf="@id/linearLayout_firstName">
+
+        <TextView
+            android:id="@+id/lastName_itemDoctor_label"
+            style="@style/LabelItemStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lastNameLabel" />
+
+        <TextView
+            android:id="@+id/lastName_itemDoctor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/TextItemStyle"
+            tools:text="Klepikov" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout_age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="@id/linearLayout_lastName"
+        app:layout_constraintTop_toBottomOf="@id/linearLayout_lastName">
+
+        <TextView
+            android:id="@+id/age_itemDoctor_label"
+            style="@style/LabelItemStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ageLabel" />
+
+        <TextView
+            android:id="@+id/age_itemDoctor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/TextItemStyle"
+            tools:text="10 years old" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout_specialization"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="@id/linearLayout_age"
+        app:layout_constraintTop_toBottomOf="@id/linearLayout_age">
+
+        <TextView
+            android:id="@+id/specialization_itemDoctor_label"
+            style="@style/LabelItemStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/specializationLabel" />
+
+        <TextView
+            android:id="@+id/specialization_itemDoctor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/TextItemStyle"
+            tools:text="optometrist" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout_workDays"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="@id/linearLayout_specialization"
+        app:layout_constraintTop_toBottomOf="@id/linearLayout_specialization">
+
+        <TextView
+            android:id="@+id/workDays_itemDoctor_label"
+            style="@style/LabelItemStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/workDaysLabel" />
+
+        <TextView
+            android:id="@+id/workDays_itemDoctor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/TextItemStyle"
+            tools:text="Mondey, Tuesday" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout_workHours"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="@id/linearLayout_workDays"
+        app:layout_constraintTop_toBottomOf="@id/linearLayout_workDays">
+
+        <TextView
+            android:id="@+id/workHours_itemDoctor_label"
+            style="@style/LabelItemStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/workHoursLabel" />
+
+        <TextView
+            android:id="@+id/workHours_itemDoctor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/TextItemStyle"
+            tools:text="12:00 -16:00" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout_office"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="@id/linearLayout_workHours"
+        app:layout_constraintTop_toBottomOf="@id/linearLayout_workHours">
+
+        <TextView
+            android:id="@+id/office_itemDoctor_label"
+            style="@style/LabelItemStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/officeLabel" />
+
+        <TextView
+            android:id="@+id/office_itemDoctor"
+            style="@style/TextItemStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="@id/linearLayout_office"
+        app:layout_constraintTop_toBottomOf="@id/linearLayout_office">
+
+        <TextView
+            android:id="@+id/id_itemDoctor_label"
+            style="@style/LabelItemStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/idLabel" />
+
+        <TextView
+            android:id="@+id/id_itemDoctor"
+            style="@style/TextItemStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="10" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linearLayout_id">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_itemDoctor_update"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:text="update"
+            android:textColor="@color/purple_700"
+            android:textSize="12sp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_itemDoctor_delete"
+            style="@style/CustomDeleteItemButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
